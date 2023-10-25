@@ -137,9 +137,10 @@ body {
 }
 
 .about {
-    height: auto;
-    display: flex;
-    padding: 0 10%;
+  height: auto;
+  display: flex;
+  padding: 0 10%;
+  margin-bottom: 40px; /* Add margin to create space between about and reason */
 }
 
 .about h2 {
@@ -172,6 +173,28 @@ body {
     text-decoration: none;
     margin-right: 10px;
 }
+
+.reason {
+  height: auto;
+  display: flex;
+  padding: 0 10%;
+}
+
+.reason-content {
+margin: 0 auto;
+}
+
+.reason-content h1 {
+font-weight: 700;
+}
+
+.reason-content p {
+font-size: 16px;
+margin: 20px 0;
+line-height: 1.6;
+}
+
+
   
  .footer {
     background-color: #081b29;;
