@@ -95,6 +95,38 @@ body {
     height: 50px;
 }
 
+
+/* Weird aspect ratio, use calculator if you change image size
+ * https://calculateaspectratio.com/#google_vignette 
+ * Width 3544 Height 2259
+ */
+.groupPhoto {
+  width: 800px;
+  height: 509px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-left: 50px;
+}
+/* Override at smaller screen sizes to move image bellow content */
+@media (max-width: 1000px) {
+  .home {
+    justify-items: flex-start;
+    flex-direction: column;
+  }
+  .home-content {
+    margin-top: 150px;
+  }
+  /* Note, weird bug that makes the image look really compressed between screen width 392 and 480 
+   * Also if screen height is < 800, the "Om Oss" text overlaps with picture
+   */
+  .groupPhoto{
+    margin-left: 0px;
+    margin-top: 25px;
+    width: 300px;
+    height: 191px;
+  }
+}
+
 .button-box a {
     position: relative;
     display: inline-flex;
